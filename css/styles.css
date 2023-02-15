@@ -11710,6 +11710,11 @@ body {
   background-color: #e9ecef;
 }
 
+.card-hdr {
+  background-color: #e9ecef;
+  color: #48a8e0
+}
+
 .mrgin {
   width: 80%
 }
