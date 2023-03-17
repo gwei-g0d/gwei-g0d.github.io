@@ -4718,6 +4718,41 @@ textarea.form-control-lg {
   border-radius: calc(0.25rem - 1px);
 }
 
+.founders-card {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.card.founder-card {
+  background-color: #ddd;
+  border-color: #3d3d45;
+  border-width: 1px;
+}
+
+.founder-divider {
+  width: 50%;
+  border-top: 3px solid #000; /* Replace with your desired line color */
+  margin: 10px auto; /* Adjust top/bottom margin as needed */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder-image-container {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border-radius: 35%; /* Add this property to create a rounded look */
+  margin-top: 15px; /* Add this property to create spacing at the top */
+}
+
 .card-img,
 .card-img-top,
 .card-img-bottom {
