@@ -8001,6 +8001,32 @@ textarea.form-control-lg {
 
 #pilot-hdr {
   color: #e3dbdb !important;
+  font-size: 50px;
+}
+
+#mission {
+  max-width: 20rem;
+  width: 100%;
+  color: #e3dbdb;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+
+@media (max-width: 768px) {
+  #mission {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+    bottom: 0;
+  }
+}
+
+#definition {
+  margin: 0;
+  color: white;
 }
 
 .text-white-50 {
@@ -11602,18 +11628,32 @@ body {
   border: 0;
 }
 
+/* .masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url("../assets/img/jet_fly_crop.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+} */
+
 .masthead {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/jet_fly.jpg");
-  background-position: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url("../assets/img/jet_fly.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
 .masthead h1, .masthead .h1 {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
