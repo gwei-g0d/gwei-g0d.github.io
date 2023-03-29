@@ -11628,7 +11628,7 @@ body {
   border: 0;
 }
 
-/* .masthead {
+.masthead {
   position: relative;
   width: 100%;
   height: auto;
@@ -11639,9 +11639,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-} */
+}
 
-.masthead {
+/* .masthead {
   position: relative;
   width: 100%;
   height: auto;
@@ -11652,7 +11652,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
+} */
 
 .masthead h1, .masthead .h1 {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
