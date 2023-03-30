@@ -4718,6 +4718,53 @@ textarea.form-control-lg {
   border-radius: calc(0.25rem - 1px);
 }
 
+.stagger-left {
+  position: relative;
+  left: -5%; /* Adjust this value to move the card further left or right */
+  top: -25px; /* Adjust this value to move the card higher or lower */
+}
+
+.stagger-right {
+  position: relative;
+  right: -5%; /* Adjust this value to move the card further left or right */
+  top: 25px; /* Adjust this value to move the card higher or lower */
+}
+
+@media (max-width: 767px) {
+  .stagger-left,
+  .stagger-right {
+    position: static;
+    left: auto;
+    top: auto;
+    right: auto;
+  }
+}
+
+.text-above-founder-2 {
+  color: #eee;
+  padding-top: 10%;
+  /* text-align: left; */
+}
+
+.text-below-founder-1 {
+  color: #e3dbdb;
+  padding-bottom: 10%;
+  /* text-align: right; */
+}
+
+/* Add media query to reset the text position for smaller screens */
+@media (max-width: 767px) {
+  .text-above-founder-2,
+  .text-below-founder-1 {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+}
+/****/
+
 .founders-card {
   max-width: 100%;
   max-height: 100%;
@@ -4725,14 +4772,15 @@ textarea.form-control-lg {
 }
 
 .card.founder-card {
-  background-color: #ddd;
-  border-color: #3d3d45;
+  background-color: transparent;
+  border-color: #ddd;
   border-width: 1px;
+  color: #eee;
 }
 
 .founder-divider {
   width: 50%;
-  border-top: 3px solid #000; /* Replace with your desired line color */
+  border-top: 3px solid #fff; /* Replace with your desired line color */
   margin: 10px auto; /* Adjust top/bottom margin as needed */
 }
 
@@ -8001,7 +8049,7 @@ textarea.form-control-lg {
 
 #pilot-hdr {
   color: #e3dbdb !important;
-  font-size: 50px;
+  /* font-size: 50px; */
 }
 
 #mission {
@@ -8011,8 +8059,9 @@ textarea.form-control-lg {
   padding: 1rem;
   box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: 10rem;
   right: 2rem;
+  /* left: 2rem; */
 }
 
 @media (max-width: 768px) {
@@ -8089,6 +8138,12 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
+
+.bg-team {
+  /* background: linear-gradient(180deg, rgba(49, 49, 49, 1) 50%, rgba(0, 0, 0, 0) 100%); */
+  background: linear-gradient(0deg, #48a8e0 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+
 
 .bg-dark {
   --bs-bg-opacity: 1;
@@ -11628,7 +11683,7 @@ body {
   border: 0;
 }
 
-.masthead {
+/* .masthead {
   position: relative;
   width: 100%;
   height: auto;
@@ -11639,9 +11694,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
+} */
 
-/* .masthead {
+.masthead {
   position: relative;
   width: 100%;
   height: auto;
@@ -11652,7 +11707,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-} */
+}
 
 .masthead h1, .masthead .h1 {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
