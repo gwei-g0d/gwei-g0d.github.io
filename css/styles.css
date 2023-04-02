@@ -11602,6 +11602,78 @@ body {
   border: 0;
 }
 
+.get-started {
+  background-color: transparent;
+  color: #eee;
+  border: 1px #eee solid;
+}
+
+.get-started:hover {
+  transition: 750ms;
+  background-color: #7ba9ba;
+  color: #eee;
+  border: 1px #000 solid;
+}
+
+.landtxt {
+  text-align: left;
+}
+
+#litepaper {
+  max-width: 20rem;
+  width: 100%;
+  color: #e3dbdb;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0rem;
+  right: 2rem;
+  /* left: 2rem; */
+}
+
+@media (max-width: 768px) {
+  #litepaper {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+    bottom: 0;
+  }
+
+  .landtxt {
+    text-align: center;
+  }
+
+  .masthead {
+    padding-bottom: 30px !important;
+  }
+
+  #mission {
+    padding-top: 65px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+#mission {
+  max-width: 20rem;
+  width: 100%;
+  color: #e3dbdb;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0rem;
+  /* right: 2rem; */
+  left: 2rem;
+}
+
+@media (max-width: 768px) {
+  #mission {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+    bottom: 0;
+  }
+}
 
 .masthead {
   position: relative;
@@ -11663,6 +11735,22 @@ body {
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #mission {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+    bottom: 0;
+  }
+  .masthead {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/jet_fly.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
 
