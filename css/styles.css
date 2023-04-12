@@ -11775,7 +11775,7 @@ body {
 	margin-top: 120px;
 }
 .box-table {
-	width: 30vw;
+	/* width: 30vw; */
 	font-size: 1em;
 	line-height: 1.5em;
 	font-weight: 200;
@@ -11812,6 +11812,26 @@ body {
 	margin-bottom: 1.2em;
 	letter-spacing: 1px;
 	font-family: Lora, serif;
+}
+
+@media (max-width: 768px) {
+  .box-table {
+    margin-top: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-left: none;
+  	/* border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+    /* border-image: linear-gradient(to right, #181818, #eee, #181818) 1 100%; */
+  }
+
+  .boxes-table {
+    margin-top: 100px;
+    display: block;
+    justify-content: flex-start;
+    color: #d8d8d8;
+  }
 }
 
 /** DONE **/
