@@ -11820,10 +11820,11 @@ body {
     padding-top: 4%;
     padding-bottom: 4%;
     border: 2px solid #ccc;
+    border-radius: 3%;
     border-right: none;
     border-left: none;
   	/* border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
-    /* border-image: linear-gradient(to right, #181818, #eee, #181818) 1 100%; */
+    /* border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%; */
   }
 
   .boxes-table {
